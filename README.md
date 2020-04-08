@@ -37,6 +37,7 @@ rule::registernumber::blacklist
 
 **Below the ad.json file content :** 
 
+```json
 [{
 	"contacts": {
 		"firstName": "Christophe",
@@ -214,6 +215,7 @@ rule::registernumber::blacklist
 	}
 }
 ]
+```
 
 
 

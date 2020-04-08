@@ -31,7 +31,11 @@ rule::price::quotation_rate
 rule::registernumber::blacklist
 
 
-Below the ad file content : 
+
+
+
+
+**Below the ad.json file content :** 
 
 [{
 	"contacts": {

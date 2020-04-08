@@ -17,11 +17,17 @@ Run HomeCt01Application to generate results.json file.
 The results.jon file contains results ads validation Scam (yes / no).
 
 Rules to match :
+
 rule::firstname::length 
+
 rule::lastname::length 
+
 rule:✉:alpha_rate
+
 rule:✉:number_rate
+
 rule::price::quotation_rate
+
 rule::registernumber::blacklist
 
 

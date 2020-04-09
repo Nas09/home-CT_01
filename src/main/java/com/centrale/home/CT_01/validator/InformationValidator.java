@@ -109,9 +109,7 @@ public class InformationValidator extends StepExecutionListenerSupport
         int numberOfAlpha = emailFirstPart.length() - emailWithoutAlpha.length();
         int sizeEmailFirstPart = emailFirstPart.length();
         float percentage = numberOfAlpha * 100 / sizeEmailFirstPart;
-        if(percentage > 70){
-            return true;
-        } else return false;
+        return percentage > 70;
     }
 
     public boolean is_email_number_rate_valid(Ad ad) {
@@ -123,9 +121,7 @@ public class InformationValidator extends StepExecutionListenerSupport
         int numberOfNum = emailFirstPart.length() - emailWithoutNum.length();
         int sizeEmailFirstPart = emailFirstPart.length();
         float percentage = numberOfNum * 100 / sizeEmailFirstPart;
-        if(percentage < 30){
-            return true;
-        } else return false;
+        return percentage < 30;
     }
 
     public boolean is_price_quotation_rate_valid(Ad ad) throws JsonProcessingException {
@@ -134,9 +130,7 @@ public class InformationValidator extends StepExecutionListenerSupport
         Long price = ad.getPrice();
         Long diff = Math.abs(price - quotation);
         float percentage = diff * 100 / quotation;
-        if(percentage>20) {
-            return false;
-        } else return true;
+        return percentage>20;
     }
 
     public boolean is_register_number_blacklist(Ad ad) {
